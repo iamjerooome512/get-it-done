@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Get It Done</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#F5F1E8;
+      color:#24352C;
+      line-height:1.6;
+    }
+    header{
+      background:#2F6E5B;
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+    h1{font-size:42px;margin-bottom:10px}
+    nav{
+      background:#24352C;
+      padding:15px 20px;
+      text-align:center;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-weight:bold;
+    }
+    nav a:hover{color:#D8B36A}
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+    h2{
+      font-size:36px;
+      margin-bottom:30px;
+      color:#2F6E5B;
+    }
+    .profile-card{
+      background:white;
+      padding:40px;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .profile-image{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      background:#D8B36A;
+      margin:0 auto 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:60px;
+    }
+    .profile-card h3{
+      font-size:28px;
+      margin-bottom:10px;
+    }
+    .profile-card p{
+      color:#666;
+      margin-bottom:5px;
+    }
+    .experience-item{
+      background:white;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      margin-bottom:25px;
+      border-left:5px solid #2F6E5B;
+    }
+    .experience-item h4{
+      font-size:20px;
+      color:#2F6E5B;
+      margin-bottom:8px;
+    }
+    .experience-item .company{
+      font-weight:bold;
+      color:#666;
+      margin-bottom:10px;
+    }
+    .experience-item p{
+      color:#555;
+      line-height:1.8;
+    }
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+    .skill-card{
+      background:white;
+      padding:25px;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      text-align:center;
+    }
+    .skill-icon{
+      font-size:40px;
+      margin-bottom:15px;
+    }
+    .skill-card h4{
+      color:#2F6E5B;
+      margin-bottom:10px;
+    }
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+    .portfolio-item{
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+    .portfolio-image{
+      width:100%;
+      height:200px;
+      background:#D8B36A;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:50px;
+    }
+    .portfolio-content{
+      padding:25px;
+    }
+    .portfolio-content h4{
+      color:#2F6E5B;
+      margin-bottom:10px;
+      font-size:18px;
+    }
+    .portfolio-content p{
+      color:#555;
+      font-size:14px;
+      line-height:1.6;
+    }
+    .tags{
+      margin-top:15px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .tag{
+      background:#f0e8dd;
+      color:#2F6E5B;
+      padding:6px 12px;
+      border-radius:20px;
+      font-size:12px;
+      font-weight:bold;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      background:#D8B36A;
+      color:#24352C;
+      padding:14px 24px;
+      text-decoration:none;
+      border-radius:999px;
+      font-weight:bold;
+    }
+    .btn:hover{background:#c9a35a}
+    footer{
+      background:#24352C;
+      color:#eee;
+      text-align:center;
+      padding:30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio</h1>
+  <p>Jam Jeshia Pedreso • Customer Support Specialist</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+
+<section>
+  <div class="profile-card">
+    <div class="profile-image">👤</div>
+    <h3>Jam Jeshia Pedreso</h3>
+    <p>Customer Support Specialist</p>
+    <p>Email: hello@getitdone.com</p>
+    <p>Facebook: Get It Done</p>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+  
+  <div class="experience-item">
+    <h4>Customer Support Specialist</h4>
+    <div class="company">eBay</div>
+    <p>Handled customer inquiries, resolved disputes, and managed communication channels. Maintained high satisfaction rates and ensured timely responses to customer concerns.</p>
+  </div>
+
+  <div class="experience-item">
+    <h4>Support Associate</h4>
+    <div class="company">Lyft</div>
+    <p>Provided driver and passenger support through multiple channels. Troubleshot app issues and resolved payment-related concerns with professionalism and efficiency.</p>
+  </div>
+
+  <div class="experience-item">
+    <h4>SMS Quality Review Specialist</h4>
+    <div class="company">Quality Review Services</div>
+    <p>Reviewed and analyzed SMS communications for quality assurance. Ensured compliance with company standards and provided feedback on communication effectiveness.</p>
+  </div>
+
+  <div class="experience-item">
+    <h4>AI Data Annotation Specialist</h4>
+    <div class="company">AI Training Programs</div>
+    <p>Labeled images and content for machine learning datasets. Maintained accuracy and consistency while meeting tight deadlines for AI model development.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Skills & Expertise</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">💬</div>
+      <h4>Customer Support</h4>
+      <p>Email, chat, phone support & dispute resolution</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📊</div>
+      <h4>Data Entry</h4>
+      <p>Accurate data management & organization</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🏷️</div>
+      <h4>Data Annotation</h4>
+      <p>AI image labeling & content categorization</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📚</div>
+      <h4>English Tutoring</h4>
+      <p>1-on-1 communication coaching</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚙️</div>
+      <h4>Virtual Assistance</h4>
+      <p>Admin tasks & project coordination</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">✅</div>
+      <h4>Quality Assurance</h4>
+      <p>Content review & accuracy checking</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Featured Work</h2>
+  
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <div class="portfolio-image">🛍️</div>
+      <div class="portfolio-content">
+        <h4>eBay Customer Support</h4>
+        <p>Resolved complex customer issues and managed dispute escalations for e-commerce transactions.</p>
+        <div class="tags">
+          <span class="tag">Customer Support</span>
+          <span class="tag">Dispute Resolution</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="portfolio-image">🚗</div>
+      <div class="portfolio-content">
+        <h4>Lyft Support Services</h4>
+        <p>Provided technical support to drivers and passengers, troubleshot app issues and handled account concerns.</p>
+        <div class="tags">
+          <span class="tag">Tech Support</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="portfolio-image">📱</div>
+      <div class="portfolio-content">
+        <h4>SMS Quality Review</h4>
+        <p>Analyzed SMS communications for quality assurance and provided recommendations for improvement.</p>
+        <div class="tags">
+          <span class="tag">Quality Assurance</span>
+          <span class="tag">Content Review</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="portfolio-image">🤖</div>
+      <div class="portfolio-content">
+        <h4>AI Data Annotation</h4>
+        <p>Labeled and categorized images and content for machine learning model training with high accuracy.</p>
+        <div class="tags">
+          <span class="tag">AI Training</span>
+          <span class="tag">Data Labeling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Ready to Work Together?</h2>
+  <p>Whether you need customer support, data annotation, virtual assistance, or English tutoring, I'm ready to help. Contact us today to discuss your project.</p>
+  <a class="btn" href="index.html#contact">Get in Touch</a>
+</section>
+
+<footer>
+  © 2026 Get It Done • Remote Freelance Services
+</footer>
+
+</body>
+</html>
